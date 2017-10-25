@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="semantic/dist/semantic.css">
+  <script src="./app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="assets/sweetalert/dist/sweetalert.css">
+  <style type="text/css">
+  body {
+    background-color: #FFFFFF;
+  }
+  .ui.menu .item img.logo {
+    margin-right: 1.5em;
+  }
+  .main.container {
+    margin-top: 7em;
+  }
+  .ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+  }
+  </style>
+  <script type="text/javascript">
+  function JSalertSupplier(){
+    var supp_address=document.getElementById("addSupplierAddr").value ;
+    var supp_name= document.getElementById("addSupplierName").value;
+    if (supp_address===""||supp_name==="")
+    {
+      swal({
+        title: "Error!",
+        text: "Please Fill All Required Fields!",
+        type: "error",
+        confirmButtonText: "Ok"
+      });
+      return false;
+    }
+    swal({   title: "Transaction Alert!",
+    text: "Are you sure to proceed?",
+    type: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#DD6B55",
+    confirmButtonText: "Yes!",
+    cancelButtonText: "No",
+    closeOnConfirm: false,
+    closeOnCancel: false },
+    function(isConfirm){
+      if (isConfirm)
+      {
+        App.addSuppliers();
+        swal("Transaction Complete!",supp_name+" added as Supplier", "success");
+        return true;
+      }
+      else {
+        swal("Transaction Incomplete!", "Try Again!", "error");
+        return false;
+      } });
+    }
+    function JSalertBuyer(){
+      var client_address = document.getElementById("addClientAddr").value;
+      var client_name=document.getElementById("addClientName").value;
+      if (client_address===""||client_name==="")
+      {
+        swal({
+          title: "Error!",
+          text: "Please Fill All Required Fields!",
+          type: "error",
+          confirmButtonText: "Ok"
+        });
+        return false;
+      }
+      swal({   title: "Transaction Alert!",
+      text: "Are you sure to proceed?",
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "Yes!",
+      cancelButtonText: "No",
+      closeOnConfirm: false,
+      closeOnCancel: false },
+      function(isConfirm){
+        if (isConfirm)
+        {
+          App.addBuyers();
+          swal("Transaction Complete!",client_name+" added as Buyer", "success");
+          return true;
+        }
+        else {
+          swal("Transaction Incomplete!", "Try Again!", "error");
+          return false;
+        } });
+      }
+      </script>
+      
+      <title>Manage Box | SmartBox</title>
+    </head>
+    <body>
+      <div class="ui fixed menu">
+        <div class="ui container">
+          <a href="index.html" class="header item">
+            <img class="logo" src="assets/FI.png">
+            SmartBox
+          </a>
+
+          <a href="view1.html" class="item">View Box</a>
+          <a href="manage.html" class="item">Manage Box</a>
+          <a href="manage_advanced.html" class="item">Add Tools</a>
+          <a href="index1.html" class="item">Buy Tools</a>
+          <a href="Transaction.html" class="item">Visualize Blockchain</a>
+        </div>
+      </div>
+
+      <div class="ui main container">
+
+        <div class="ui unordered steps">
+          <a class="active step">
+            <i class="payment icon"></i>
+            <div class="content">
+              <div class="title">Add Supplier/Client</div>
+              <div class="description">Add a supplier/client to the blockchain</div>
+            </div>
+          </a>
+
+        </div>
+
+
+        <div class="ui container">
+          <form class="ui form" id="addSupplier">
+            <div class="field">
+              <label for="amount">Add Supplier</label>
+              <input type="text" id="addSupplierAddr" placeholder="Enter Supplier Address" >
+            </div>
+
+            <div class="field">
+
+              <input type="text" id="addSupplierName" placeholder="Enter Supplier Name" >
+            </div>
+
+
+
+          </form>
+          <br>
+          <div class="field">
+            <button class="ui button positive" id="addSupplierButton" onclick="JSalertSupplier();">Add Supplier</button>
+          </div>
+          <p><br /></p>
+
+          <form class="ui form" id="addClient">
+            <div class="field">
+              <label for="amount">Add Buyer</label>
+              <input type="text" id="addClientAddr" placeholder="Enter Buyer Address"></input>
+            </div>
+
+            <div class="field">
+
+              <input type="text" id="addClientName" placeholder="Enter Buyer Name" >
+            </div>
+
+          </form>
+          <br>
+          <div class="field">
+            <button class="ui button positive" id="addClientButton" onclick="JSalertBuyer();">Add Client</button>
+          </div>
+
+        </div>
+
+
+      </div>
+      <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
+      <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+          <div class="ui stackable inverted divided grid">
+            <div class="three wide column">
+              <h4 class="ui inverted header"></h4>
+              <div class="ui inverted link list">
+              </div>
+            </div>
+
+            <h4 class="ui inverted header"></h4>
+            <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
+          </div>
+
+        </div>
+      </div>
+
+    </body>
+    </html>
