@@ -1,0 +1,112 @@
+Clemens Putschli (1):
+      e7b300b	Clemens Putschli	Fri Apr 28 10:30:06 2017 +0200	added Readme File
+
+Dipankar Bahirvani (30):
+      529e79a	Dipankar Bahirvani	Fri May 26 13:56:02 2017 +0200	Team2 Presenations
+      4a74d31	Dipankar Bahirvani	Fri May 26 13:59:28 2017 +0200	FitCoin Etherium
+      1f66193	Dipankar Bahirvani	Wed May 31 01:04:52 2017 +0200	Smart Box
+      daf7e7d	Dipankar Bahirvani	Thu Jun 1 14:08:29 2017 +0200	Supplier contract changes
+      8499d44	Dipankar Bahirvani	Wed Jun 7 23:57:49 2017 +0200	App.js changes
+      e3e5190	Dipankar Bahirvani	Mon Jun 12 21:41:47 2017 +0200	String Parser
+      1b3abd7	Dipankar Bahirvani	Mon Jun 12 23:13:15 2017 +0200	Box.sol
+      b04c344	Dipankar Bahirvani	Wed Jun 14 08:01:27 2017 +0200	Box changes
+      ef3a954	Dipankar Bahirvani	Wed Jun 14 08:02:34 2017 +0200	Box changes
+      dbcbb17	Dipankar Bahirvani	Wed Jun 14 08:38:31 2017 +0200	 New Branch
+      69c05e2	Dipankar Bahirvani	Thu Jun 15 00:23:00 2017 +0200	Refactoring
+      2d8166a	Dipankar Bahirvani	Thu Jun 22 22:45:40 2017 +0200	UI changes
+      b06b9a0	Dipankar Bahirvani	Fri Jun 23 02:45:47 2017 +0200	New app changes
+      2b4f538	Dipankar Bahirvani	Fri Jun 23 09:44:48 2017 +0200	New app.js
+      e919e7e	Dipankar Bahirvani	Fri Jul 7 02:26:14 2017 +0200	TransactionChanges
+      f2d8344	Dipankar Bahirvani	Fri Jul 7 10:42:59 2017 +0200	SmallBugs
+      7e5e60a	Dipankar Bahirvani	Fri Jul 7 11:10:57 2017 +0200	Make sure geth is detected from the correct account
+      59fb162	Dipankar Bahirvani	Fri Jul 7 13:26:19 2017 +0200	Rfid Changes
+      7304f81	Dipankar Bahirvani	Sun Jul 9 23:13:01 2017 +0200	 Improved Box.sol and app.js to populate list of Products
+      92fe65e	Dipankar Bahirvani	Mon Jul 10 01:41:32 2017 +0200	 Added code to display name of supplier also, modified Box.sol for mapping of address and supplier name
+      d986740	Dipankar Bahirvani	Mon Jul 10 02:00:15 2017 +0200	Modified add supplier and add buyer page to take supplier name as input also
+      ff8ed73	Dipankar Bahirvani	Tue Jul 11 09:32:31 2017 +0200	Buy Products UI should take supplier Input also
+      055d48a	Dipankar Bahirvani	Tue Jul 11 09:45:40 2017 +0200	Buy Products UI should take supplier Input also
+      8594d43	Dipankar Bahirvani	Tue Jul 11 22:19:04 2017 +0200	Modifed contract to handle a list of clients, app.js api to display client list and few front end improvements
+      92a9e8e	Dipankar Bahirvani	Tue Jul 11 23:36:24 2017 +0200	Small bug related to clientcount
+      7bf6624	Dipankar Bahirvani	Fri Jul 21 01:28:11 2017 +0200	Run app server  on a diff machine
+      8a5249c	Dipankar Bahirvani	Fri Jul 21 11:34:11 2017 +0200	String Formatting
+      eadb147	Dipankar Bahirvani	Tue Jul 25 20:30:27 2017 +0200	Small Change
+      07c292e	Dipankar Bahirvani	Tue Jul 25 20:36:40 2017 +0200	Merge branch 'master' of https://scm.fit.fraunhofer.de/scm/git/BlockchainLab
+      6fb205b	Dipankar Bahirvani	Fri Aug 11 09:38:44 2017 +0200	Final Presentation and Vidoe
+
+Gyumin Lee (2):
+      740c500	Gyumin Lee	Fri May 19 10:51:44 2017 +0200	Add team2 FITcoin Test URL
+      1b375cb	Gyumin Lee	Fri May 26 10:12:16 2017 +0200	Change folder name
+
+HasanMosharrof (3):
+      645af3f	HasanMosharrof	Fri May 26 14:00:17 2017 +0200	Log file has been added
+      d3f9e61	HasanMosharrof	Sun Jun 4 23:32:52 2017 +0200	check and test
+      3102763	HasanMosharrof	Sun Jun 4 23:33:19 2017 +0200	check and test
+
+Viktor Lopatin (2):
+      fe10d20	Viktor Lopatin	Fri May 19 08:32:21 2017 +0200	Add team 4 FITCoin
+      8d0bba4	Viktor Lopatin	Sun Aug 13 14:18:29 2017 +0200	Team 4 Chaincode
+
+Vinay Pyati (32):
+      d158688	Vinay Pyati	Wed May 31 21:38:47 2017 +0200	extremely beta implementation of box contract(not deployed or tested)
+      bdff5c6	Vinay Pyati	Wed May 31 21:48:51 2017 +0200	indentation
+      c64a547	Vinay Pyati	Wed May 31 22:25:30 2017 +0200	indentation
+      f329f91	Vinay Pyati	Wed Jun 14 04:55:38 2017 +0200	Adding lot of changes aas listed below. 1. Indent, improve readability and better names to the functions, variables. 2. change function names to get,add,sell. 3. introduce inheritance to code reuse for Tool and Material supplier. 4. Make public declared global variables as local as possible. 5. avoid unknown struct memory allocation and add memory struct and push to map. 6. move client methods to client.sol and make the supplier and client totally independent. TO-DO-- remove inheritance and make separate files for eac supplier.
+      6cbba1b	Vinay Pyati	Wed Jun 14 04:59:02 2017 +0200	1. adding client.sol 2. add methods from supplier.sol and introduce a new method push that will be called from supplier when selling products. 3. importing supplier and vice versa in supplier.
+      3ed1f39	Vinay Pyati	Wed Jun 14 05:00:13 2017 +0200	include cliet.sol in the deploy contracts
+      6098af4	Vinay Pyati	Wed Jun 14 05:05:12 2017 +0200	Add material supplier contract
+      477e701	Vinay Pyati	Wed Jun 14 05:05:49 2017 +0200	Add tool supplier contract
+      a08fa60	Vinay Pyati	Wed Jun 14 05:07:03 2017 +0200	add new contracts to the deplo contract js
+      ea0bbce	Vinay Pyati	Wed Jun 14 05:15:09 2017 +0200	1. remove the new contract code from supplier.sol 2. finishing todays work. TO DO- use strings to fecilitate use of array return simulation or display of all clients and suppliers on web3pack
+      7f69653	Vinay Pyati	Fri Jun 30 08:01:17 2017 +0200	adding UI
+      0c25f2b	Vinay Pyati	Thu Jul 6 23:03:47 2017 +0200	add new UI connected to backend
+      fb784a2	Vinay Pyati	Fri Jul 7 03:48:55 2017 +0200	UI with backend fully connected
+      f971013	Vinay Pyati	Fri Jul 7 04:02:08 2017 +0200	UI and backend fully connected
+      699de9e	Vinay Pyati	Fri Jul 7 04:03:58 2017 +0200	Merge branch 'master' of https://scm.fit.fraunhofer.de/scm/git/BlockchainLab
+      41cddce	Vinay Pyati	Fri Jul 7 04:32:21 2017 +0200	fully integrated UI and backend : USE THIS REPO FOR LATEST CHANGES REQUIRED FOR PRESENTATION ON 7TH JULY
+      511cf35	Vinay Pyati	Fri Jul 7 04:37:36 2017 +0200	removed unnecessary folders
+      fb7eb37	Vinay Pyati	Fri Jul 7 04:51:24 2017 +0200	Organized folders
+      c2e933d	Vinay Pyati	Mon Jul 10 19:22:48 2017 +0200	1. Added AddProducts UI. 2. Added validation of UI fields 3. Renamed few functions. 4. Minor UI improvements.
+      fd0a293	Vinay Pyati	Tue Jul 11 01:32:42 2017 +0200	Nice alerts addedgit status! Can be improved. This should be enough for now
+      2ba5577	Vinay Pyati	Tue Jul 11 02:19:53 2017 +0200	Moved validation of fields to respective htmls with nice alerts
+      e4d263a	Vinay Pyati	Tue Jul 11 15:35:49 2017 +0200	1. Added view box tab 2. polishing the UI. 3. remove unnecessary buttons. This UI looks clean now
+      cfa3ecc	Vinay Pyati	Tue Jul 11 22:38:02 2017 +0200	Removing girl :*
+      a49dd8b	Vinay Pyati	Wed Jul 12 00:15:10 2017 +0200	minor UI changes
+      2675b93	Vinay Pyati	Tue Jul 25 17:00:34 2017 +0200	Adding visualization of blockchain. providing alerts to see the block in detail added new file chain.html labels at the bottom right corner lot of other Ui changes
+      3f9d647	Vinay Pyati	Wed Jul 26 00:20:34 2017 +0200	Solve flickering of blocks near the corners of the window bug polishing UI finishing the rendering task
+      4a84b51	Vinay Pyati	Wed Jul 26 00:21:38 2017 +0200	Merge branch 'master' of https://scm.fit.fraunhofer.de/scm/git/BlockchainLab
+      5659f45	Vinay Pyati	Wed Jul 26 00:30:01 2017 +0200	Indentation
+      834131d	Vinay Pyati	Wed Jul 26 01:13:43 2017 +0200	Small Ui changes and indentation Chnage Product as Tool everywhere
+      62a0344	Vinay Pyati	Wed Jul 26 01:21:30 2017 +0200	Some more changes to UI
+      fc5e402	Vinay Pyati	Thu Jul 27 22:00:47 2017 +0200	adding visualization changes to 6.0
+      ec3254c	Vinay Pyati	Thu Jul 27 22:01:44 2017 +0200	Merge branch 'master' of https://scm.fit.fraunhofer.de/scm/git/BlockchainLab
+
+Vinoth Pandian (2):
+      012d21a	Vinoth Pandian	Sat Aug 12 01:59:06 2017 +0200	Team 1: Uploaded Final presentation slides and offline prezi viewer
+      bbe031d	Vinoth Pandian	Sat Aug 12 02:20:06 2017 +0200	Team 1: Added the FIT coin project folder
+
+anil.ustundag (1):
+      33a8213	anil.ustundag	Sun Aug 13 14:07:40 2017 +0200	missing visualization part updated.
+
+dan801212 (1):
+      9330e42	dan801212	Fri Aug 11 15:21:54 2017 +0200	team3 final present
+
+earlvik (1):
+      7f73daa	earlvik	Fri Aug 11 14:24:17 2017 +0200	Team 4 final commit
+
+narayan.ghimire (3):
+      a353916	narayan.ghimire	Tue May 23 17:21:55 2017 +0100	our blockchin front end code
+      205ea70	narayan.ghimire	Tue May 23 17:34:07 2017 +0100	chaincode front end
+      2018190	narayan.ghimire	Fri Aug 18 15:44:03 2017 +0100	final presentation
+
+sharmav (5):
+      55c71a3	sharmav	Thu Jun 1 15:03:28 2017 +0200	Adding Fit Coin chaincode
+      4415f68	sharmav	Thu Jun 1 15:28:53 2017 +0200	Moving Fit Coin files to folder
+      8a66e15	sharmav	Wed Jun 28 19:37:05 2017 +0200	Adding back end code
+      14ad568	sharmav	Thu Aug 3 21:08:50 2017 +0200	Final push
+      92ff82d	sharmav	Thu Aug 3 21:09:54 2017 +0200	Merge branch 'master' of https://scm.fit.fraunhofer.de/scm/git/BlockchainLab
+
+shubhamkapoor (3):
+      7dde7f1	shubhamkapoor	Thu Jul 27 21:15:16 2017 +0200	Team 1 release code
+      302b5fc	shubhamkapoor	Sat Jul 29 11:16:47 2017 +0200	Final Code
+      fc5234e	shubhamkapoor	Sat Jul 29 11:17:15 2017 +0200	Merge branch 'master' of https://scm.fit.fraunhofer.de/scm/git/BlockchainLab
+
